@@ -8,6 +8,15 @@
   }
   
   let promise = init();
+  liff
+  .getProfile()
+  .then((profile) => {
+    const name = profile.displayName;
+    console.log(name)
+  })
+  .catch((err) => {
+    console.log("error", err);
+  });
 </script>
 
 <main>
